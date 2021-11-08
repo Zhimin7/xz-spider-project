@@ -6,7 +6,7 @@ import threading
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
 }
-name = 0
+name = 0    # 图片名
 
 
 def request_data(url):
@@ -21,7 +21,7 @@ def save_data(result, path):
 
 def get_data(url):
     global name
-    img_lists = []
+    img_lists = []  # 存储图片链接
     response = request_data(url)
     html_data = etree.HTML(response.content.decode('utf-8'))
     li_lists = html_data.xpath('//div[@id="comments"]/ul/li')
