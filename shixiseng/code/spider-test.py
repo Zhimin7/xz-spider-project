@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 
 
 zero = ''.encode('utf-8')
+print(type(zero))
 one = ''.encode('utf-8')
 two = ''.encode('utf-8')
 three = ''.encode('utf-8')
@@ -12,7 +13,15 @@ five = ''.encode('utf-8')
 # three_handred = ''.encode('utf-8')
 # fifty = ''.encode('utf-8')
 
+'''
 
+zero = ''.encode('utf-8')
+one = ''.encode('utf-8')
+two = ''.encode('utf-8')
+three = ''.encode('utf-8')
+eight = ''.encode('utf-8')
+five = ''.encode('utf-8')
+'''
 headers = {
     'User-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36'
 }
