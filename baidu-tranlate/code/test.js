@@ -10,6 +10,7 @@ function n(r, o) {
         }
         return r
     }
+
 function e(r) {
         var o = r.match(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g);
         if (null === o) {
@@ -42,3 +43,5 @@ function e(r) {
         p %= 1e6,
         p.toString() + "." + (p ^ m)
     }
+
+    console.log(e("测试"))
